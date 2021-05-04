@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h1>Log In</h1>
+            <br />
+            <div class="row">
+                <div class="form-group col-lg-4">
+                    <label for="input1">Customer ID</label>
+                    <input type="text" id="input1" class="form-control" name="contact_name" required>
+                </div>
+                <div class="form-group col-lg-4">
+                    <label for="input2">Password</label>
+                    <input type="email" id="input2" class="form-control" name="contact_email" required>
+                </div>
+
+                <div class="clearfix"></div>
+                <form action="http://localhost:58974/OrderForm/Index">
+                    <div class="form-group col-lg-12">
+                        <input type="hidden" value="contact" name="save">
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </div>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember Me
+                </label>
+                <small><p>Don't have an account? <a href="http://localhost:58974/Register/Index">Register</a></p></small>
+            </div>
+            </form>
+        </div>
+        </div>

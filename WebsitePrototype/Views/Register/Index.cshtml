@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<div class="container">
+<div class="row">
+    <div class="col-sm-8">
+        <br /><br />
+        <h3>Register</h3>
+        <p>Register with us to become part of us!</p>
+
+        <div class="row">
+            <div class="form-group col-lg-4">
+                <label for="input1">Name</label>
+                <input type="text" id="input1" class="form-control" name="contact_name">
+            </div>
+            <div class="form-group col-lg-4">
+                <label for="input2">Email Address</label>
+                <input type="email" id="input2" class="form-control" name="contact_email">
+            </div>
+            <div class="form-group col-lg-4">
+                <label for="input3">Phone Number</label>
+                <input type="phone" id="input3" class="form-control" name="contact_phone">
+            </div>
+            <div class="clearfix"></div>
+            <div class="form-group col-lg-12">
+                <input type="hidden" value="contact" name="save">
+                <button class="btn btn-primary" type="submit">Register</button>
+            </div>
+        </div>
+        </form>
+    </div>
+    </div>
